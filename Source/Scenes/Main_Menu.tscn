@@ -1,0 +1,174 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Scripts/Main_Menu.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Container" type="Container" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 280.0
+margin/top = 100.0
+margin/right = 780.0
+margin/bottom = 350.0
+
+[node name="Label" type="Label" parent="Container"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 200.0
+margin/bottom = 50.0
+text = "Welcome to this Game!\nPlease select an option below"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="Container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 60.0
+margin/right = 200.0
+margin/bottom = 110.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Start"
+flat = false
+
+[node name="Button1" type="Button" parent="Container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 120.0
+margin/right = 200.0
+margin/bottom = 170.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Tutorial"
+flat = false
+
+[node name="Button2" type="Button" parent="Container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 180.0
+margin/right = 200.0
+margin/bottom = 230.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Exit"
+flat = false
+
+[node name="Container 2" type="Container" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 280.0
+margin/top = 100.0
+margin/right = 780.0
+margin/bottom = 450.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Container 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 500.0
+margin/bottom = 250.0
+bbcode/enabled = false
+bbcode/bbcode = "In this Game you have to defend the other Knights. You are on your own and don\'t have much space.\nTo move use the \'W\', \'A\', \'S\' and \'D\' keys or use the Left-Stick on your Gamepad. To attack your enemys hold or press \'SPACE\' or \'A\' on your Controller.\nYou are also able to Sprint, simply hold \'SHIFT\' or use \'LB\'. You have to be careful, you have a limited amount of lives, but the are regenerating.\nThe other thing I wanted to let you know. You don\'t have borders in this small World, but you can get easily lost outside the Screen.\nAnd the other Knights just walk in the other direction when they encounter a Wall.\n\nGood Luck, and don\'t die too soon!"
+visible_characters = -1
+
+[node name="Button" type="Button" parent="Container 2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 375.0
+margin/top = 260.0
+margin/right = 501.0
+margin/bottom = 313.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Back"
+flat = false
+
+[node name="Container 3" type="Container" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 280.0
+margin/top = 100.0
+margin/right = 780.0
+margin/bottom = 350.0
+
+[node name="Label" type="Label" parent="Container 3"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 220.0
+margin/top = 0.0
+margin/right = 281.0
+margin/bottom = 15.0
+text = "Loading..."
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ProgressBar" type="ProgressBar" parent="Container 3"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 20.0
+margin/right = 500.0
+margin/bottom = 36.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 5.0
+range/value = 0.0
+range/exp_edit = false
+range/rounded = false
+percent/visible = true
+
+
