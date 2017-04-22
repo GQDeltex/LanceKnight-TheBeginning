@@ -14,6 +14,7 @@ var lanze
 var speed = 0
 var time_before = 0
 var time = 0
+var time_sound = 0
 var metal_sounds = ["Metal_01", "Metal_02", "Metal_03", "Metal_04", "Metal_05", "Metal_06"]
 
 func _ready():
@@ -23,7 +24,8 @@ func _ready():
 	set_process(true)
 	sprite = get_node("Sprite")
 	lanze = get_node("Sprite/Lanze")
-	get_node("SamplePlayer2D").set_polyphony(10)
+	get_node("SamplePlayer2D").set_polyphony(2)
+	get_node("SamplePlayer2D").play("Kabuddd", 1)
 
 func _get_nearest_enemy():
 	var distance = 0
@@ -61,7 +63,7 @@ func _process(delta):
 		if (hithim):
 			if ((time - time_before) > 0.5):
 				randomize()
-				get_node("SamplePlayer2D").play(metal_sounds[int(rand_range(1, 6))])
+				get_node("SamplePlayer2D").play(metal_sounds[int(rand_range(1, 6))],1)
 				hithim.lifes -= 10
 				time_before = time
 	else:
@@ -78,11 +80,13 @@ func _process(delta):
 	
 	if (motion.length() > RUNNING_SPEED * delta):
 		sprite.play("RUN")
-		if (not get_node("SamplePlayer2D").is_voice_active(0)):
+		if ((time - time_sound) > 0.5):
 			get_node("SamplePlayer2D").play("Original_Ferdi_Run", 0)
+			time_sound = time
 	elif (motion.length() > IDLE_SPEED * delta):
 		sprite.play("WALK")
-		if (not get_node("SamplePlayer2D").is_voice_active(0)):
+		if ((time - time_sound) > 0.25):
+			time_sound = time
 			get_node("SamplePlayer2D").play("Original_Ferdi_Run", 0)
 	else:
 		sprite.play("IDLE")
