@@ -21,7 +21,7 @@ func _process(delta):
 	if (Input.is_action_pressed("toggle_fullscreen")):
 		OS.set_window_fullscreen(not OS.is_window_fullscreen())
 	if (Input.is_action_pressed("quit")):
-		get_tree().quit()
+		get_tree().change_scene("res://Scenes/Main_Menu.tscn")
 	_show_lifes()
 	time = time + delta
 	if (global.get("points") >= needed_points):
