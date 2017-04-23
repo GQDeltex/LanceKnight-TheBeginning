@@ -6,7 +6,7 @@
 ===============================================================
 
 ## Made for:
- [Ludum Dare]("https://ldjam.com/")
+* [Ludum Dare]("https://ldjam.com/")
 
 ## Download-Links:
 * [Windows 64-bit](./Packaged/LanceKnight_Windows64.exe)
