@@ -104,7 +104,7 @@ margin/top = 0.0
 margin/right = 500.0
 margin/bottom = 250.0
 bbcode/enabled = false
-bbcode/bbcode = "In this Game you have to defend the other Knights. You are on your own and don\'t have much space.\nTo move use the \'W\', \'A\', \'S\' and \'D\' keys or use the Left-Stick on your Gamepad. To attack your enemys hold or press \'SPACE\' or \'A\' on your Controller.\nYou are also able to Sprint, simply hold \'SHIFT\' or use \'LB\'. You have to be careful, you have a limited amount of lives, but the are regenerating.\nThe other thing I wanted to let you know. You don\'t have borders in this small World, but you can get easily lost outside the Screen.\nAnd the other Knights just walk in the other direction when they encounter a Wall.\n\nGood Luck, and don\'t die too soon!"
+bbcode/bbcode = "In this Game you have to defend the other Knights. You are on your own and don\'t have much space.\nTo move use the \'W\', \'A\', \'S\' and \'D\' keys or use the Left-Stick on your Gamepad. To attack your enemys hold or press \'SPACE\' or \'A\' on your Controller.\nYou are also able to Sprint, simply hold \'SHIFT\' or use \'LB\'. You have to be careful, you have a limited amount of lives, but the are regenerating.\nThe other thing I wanted to let you know is, the other Knights just walk in the other direction when they encounter a Wall.\n\nGood Luck, and don\'t die too soon!"
 visible_characters = -1
 
 [node name="Button" type="Button" parent="Container 2"]

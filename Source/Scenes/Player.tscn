@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=1]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/pferd_WALK_02.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/pferd_WALK_01.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/pferd_WALK_01.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/pferd_WALK_02.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/pferd_IDLE.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/ritter mit lanz-1.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/ritter mit lanz.png" type="Texture" id=6]
@@ -22,11 +22,11 @@ extents = Vector2( 10, 133.455 )
 
 [sub_resource type="SpriteFrames" id=2]
 
-animations = [ { "frames":[ ExtResource( 2 ), ExtResource( 3 ) ], "loop":true, "name":"WALK", "speed":3.0 }, { "frames":[ ExtResource( 3 ), ExtResource( 2 ) ], "loop":true, "name":"RUN", "speed":5.0 }, { "frames":[ ExtResource( 4 ) ], "loop":true, "name":"IDLE", "speed":0.0 } ]
+animations = [ { "frames":[ ExtResource( 2 ), ExtResource( 3 ) ], "loop":true, "name":"RUN", "speed":5.0 }, { "frames":[ ExtResource( 3 ), ExtResource( 2 ) ], "loop":true, "name":"WALK", "speed":3.0 }, { "frames":[ ExtResource( 4 ) ], "loop":true, "name":"IDLE", "speed":0.0 } ]
 
 [sub_resource type="SpriteFrames" id=3]
 
-animations = [ { "frames":[ ExtResource( 5 ), ExtResource( 6 ) ], "loop":true, "name":"Stab", "speed":5.0 }, { "frames":[ ExtResource( 5 ) ], "loop":true, "name":"IDLE", "speed":5.0 } ]
+animations = [ { "frames":[ ExtResource( 5 ) ], "loop":true, "name":"IDLE", "speed":5.0 }, { "frames":[ ExtResource( 5 ), ExtResource( 6 ) ], "loop":true, "name":"Stab", "speed":5.0 } ]
 
 [sub_resource type="SampleLibrary" id=4]
 

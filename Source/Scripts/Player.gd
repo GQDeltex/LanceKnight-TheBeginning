@@ -44,16 +44,16 @@ func _process(delta):
 		MOTION_SPEED = RUNNING_SPEED
 	else:
 		MOTION_SPEED = 140
-	if (Input.is_action_pressed("player_up")):
+	if (Input.is_action_pressed("player_up"))and get_global_pos().y > 0:
 		motion += Vector2(0, -1)
 		sprite.set_rotd(0)
-	if (Input.is_action_pressed("player_down")):
+	if (Input.is_action_pressed("player_down")and get_global_pos().x < get_viewport().get_rect().size.x):
 		motion += Vector2(0, 1)
 		sprite.set_rotd(180)
-	if (Input.is_action_pressed("player_right")):
+	if (Input.is_action_pressed("player_right") and get_global_pos().x < get_viewport().get_rect().size.x):
 		motion += Vector2(1, 0)
 		sprite.set_rotd(270)
-	if (Input.is_action_pressed("player_left")):
+	if (Input.is_action_pressed("player_left") and get_global_pos().x > 0):
 		motion += Vector2(-1, 0)
 		sprite.set_rotd(90)
 	if (Input.is_action_pressed("player_fight")):
