@@ -1,5 +1,5 @@
 # Play Online
-<iframe src="./LanceKnight.html" width=1024 height=600>
+<iframe src="./LanceKnight.html" style="width:1024; height:600;">
 </iframe>
 ===============================================================
 ## Download-Links:
